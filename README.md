@@ -24,7 +24,7 @@ A lightweight, zero-dependency JavaScript calendar library that can read events 
 ## Installation
 
 ```bash
-npm install @jscal/calendar
+npm install jscal-calendar
 ```
 
 ## Quick Start
@@ -32,7 +32,7 @@ npm install @jscal/calendar
 ### Node.js
 
 ```javascript
-const JSCal = require('@jscal/calendar');
+const JSCal = require('jscal-calendar');
 
 const calendar = new JSCal();
 
@@ -60,7 +60,7 @@ console.log(events);
 ### Browser (UMD)
 
 ```html
-<script src="node_modules/@jscal/calendar/dist/index.umd.js"></script>
+<script src="node_modules/jscal-calendar/dist/index.umd.js"></script>
 <script>
   const calendar = new JSCal();
 
@@ -75,7 +75,7 @@ console.log(events);
 ### ES Modules
 
 ```javascript
-import JSCal from '@jscal/calendar';
+import JSCal from 'jscal-calendar';
 
 const calendar = new JSCal();
 calendar.loadJSON(myEvents);
@@ -185,7 +185,7 @@ const results = calendar.searchEvents('meeting');
 You can also use the parsers independently:
 
 ```javascript
-const { ICSParser, JSONParser } = require('@jscal/calendar');
+const { ICSParser, JSONParser } = require('jscal-calendar');
 
 // Parse ICS
 const icsEvents = ICSParser.parse(icsString);
@@ -272,7 +272,7 @@ JSCal includes a powerful theming system with 5 pre-built themes and support for
 ### Using Pre-built Themes
 
 ```javascript
-const { JSCal, Themes } = require('@jscal/calendar');
+const { JSCal, Themes } = require('jscal-calendar');
 
 const calendar = new JSCal({ theme: Themes.dark });
 calendar.applyTheme(document.getElementById('calendar-container'));
@@ -288,7 +288,7 @@ calendar.applyTheme(document.getElementById('calendar-container'));
 ### Creating Custom Themes
 
 ```javascript
-const { Theme } = require('@jscal/calendar');
+const { Theme } = require('jscal-calendar');
 
 const customTheme = new Theme({
     name: 'my-theme',
@@ -336,7 +336,7 @@ See the demo files for a complete example:
 ## Browser Compatibility
 
 - Modern browsers (ES6+)
-- Node.js 14+
+- Node.js 16+ (actively supported LTS versions)
 
 ## Documentation
 
@@ -366,4 +366,4 @@ The demo includes:
 
 - GitHub: https://github.com/GhDj/jscal
 - Issues: https://github.com/GhDj/jscal/issues
-- npm: https://www.npmjs.com/package/@jscal/calendar
+- npm: https://www.npmjs.com/package/jscal-calendar
