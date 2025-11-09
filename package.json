@@ -1,5 +1,5 @@
 {
-  "name": "@jscal/calendar",
+  "name": "jscal-calendar",
   "version": "1.2.0",
   "description": "A lightweight JavaScript calendar library with ICS/JSON support, CRUD operations, recurring events (RRULE), categories, priorities, holidays, and conflict detection",
   "main": "dist/index.js",
