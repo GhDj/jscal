@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JSCal - JavaScript Calendar</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>JSCal</h1>
+            <div class="import-controls">
+                <button id="loadJson" class="btn">Load JSON</button>
+                <button id="loadIcs" class="btn">Load ICS</button>
+                <input type="file" id="fileInput" accept=".ics,.json" style="display: none;">
+                <select id="themeSelector" class="theme-selector">
+                    <option value="default">Default Theme</option>
+                    <option value="dark">Dark Theme</option>
+                    <option value="minimal">Minimal Theme</option>
+                    <option value="colorful">Colorful Theme</option>
+                    <option value="corporate">Corporate Theme</option>
+                </select>
+            </div>
+        </header>
+
+        <!-- Mini Calendar Navigator -->
+        <div class="mini-calendar-container">
+            <div class="mini-calendar-header">
+                <button id="miniPrevMonth" class="mini-nav">&lt;</button>
+                <span id="miniMonthYear"></span>
+                <button id="miniNextMonth" class="mini-nav">&gt;</button>
+            </div>
+            <div id="miniCalendar" class="mini-calendar-grid"></div>
+        </div>
+
+        <div class="calendar-controls">
+            <button id="prevMonth" class="btn-nav">&lt;</button>
+            <h2 id="monthYear"></h2>
+            <button id="nextMonth" class="btn-nav">&gt;</button>
+        </div>
+
+        <div id="calendar" class="calendar-grid"></div>
+
+        <div class="event-list">
+            <h3>Events</h3>
+            <div id="eventList"></div>
+        </div>
+    </div>
+
+    <!-- Include JSCal library (UMD build includes everything) -->
+    <script src="dist/index.umd.js"></script>
+
+    <!-- Browser calendar UI -->
+    <script src="calendar.js"></script>
+</body>
+</html>

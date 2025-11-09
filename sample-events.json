@@ -1,0 +1,71 @@
+[
+  {
+    "title": "Team Meeting",
+    "start": "2025-11-05T10:00:00",
+    "end": "2025-11-05T11:00:00",
+    "description": "Weekly team sync meeting",
+    "location": "Conference Room A",
+    "categories": ["Meeting", "Work"],
+    "color": "#667eea",
+    "priority": 2,
+    "status": "CONFIRMED"
+  },
+  {
+    "title": "Project Deadline",
+    "start": "2025-11-15T17:00:00",
+    "end": "2025-11-15T18:00:00",
+    "description": "Final submission for Q4 project",
+    "categories": ["Deadline", "Work"],
+    "color": "#ff6b6b",
+    "priority": 1,
+    "status": "CONFIRMED"
+  },
+  {
+    "title": "Lunch with Client",
+    "start": "2025-11-20T12:30:00",
+    "end": "2025-11-20T14:00:00",
+    "description": "Discuss new requirements",
+    "location": "Downtown Restaurant",
+    "categories": ["Meeting", "Client"],
+    "color": "#4ecdc4",
+    "status": "CONFIRMED",
+    "attendees": [
+      {
+        "name": "John Doe",
+        "email": "john@example.com",
+        "status": "ACCEPTED"
+      }
+    ]
+  },
+  {
+    "title": "Code Review",
+    "start": "2025-11-25T14:00:00",
+    "end": "2025-11-25T15:30:00",
+    "description": "Review pull requests for calendar feature",
+    "categories": ["Development", "Work"],
+    "color": "#95e1d3",
+    "priority": 3,
+    "status": "CONFIRMED",
+    "attachments": ["https://github.com/user/repo/pull/123"]
+  },
+  {
+    "title": "Vacation",
+    "start": "2025-11-28",
+    "end": "2025-11-30",
+    "description": "Annual leave",
+    "isAllDay": true,
+    "categories": ["Personal"],
+    "color": "#f38181",
+    "status": "CONFIRMED"
+  },
+  {
+    "title": "Conference Call (Tentative)",
+    "start": "2025-11-22T15:00:00",
+    "end": "2025-11-22T16:00:00",
+    "description": "Quarterly planning session",
+    "categories": ["Meeting"],
+    "color": "#feca57",
+    "priority": 2,
+    "status": "TENTATIVE"
+  }
+]

@@ -1,0 +1,36 @@
+# Test files
+tests/
+*.test.js
+coverage/
+
+# Build configs
+jest.config.js
+rollup.config.js
+.babelrc
+
+# Examples and demos
+index.html
+calendar.js
+ics-parser.js
+style.css
+sample-*.json
+sample-*.ics
+
+# Development files
+.git/
+.gitignore
+node_modules/
+
+# Documentation
+*.md
+!README.md
+
+# IDE
+.vscode/
+.idea/
+*.swp
+*.swo
+
+# OS files
+.DS_Store
+Thumbs.db
