@@ -336,7 +336,7 @@ See the demo files for a complete example:
 ## Browser Compatibility
 
 - Modern browsers (ES6+)
-- Node.js 14+
+- Node.js 16+ (actively supported LTS versions)
 
 ## Documentation
 
